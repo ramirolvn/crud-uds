@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+use_frameworks!
+def all_pods
+	pod 'RxSwift', '~> 5'
+	pod 'RxCocoa', '~> 5'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
+	pod 'FirebaseFirestoreSwift'
+	pod 'ExpyTableView'
+end
+
+target 'crud-uds' do
+	all_pods
+	
+end
+
+target 'crud-udsTests' do
+	all_pods
+end
